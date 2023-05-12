@@ -1,5 +1,6 @@
 .container__menu-title{
-   
+    width: 100%;
+
 }
 
 .container__menu-title > h1{
@@ -17,4 +18,4 @@
     margin-top: 5px;
     margin-bottom: 5px;
     
-}
+} 
