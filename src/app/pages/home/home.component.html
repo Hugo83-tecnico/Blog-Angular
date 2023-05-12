@@ -1,9 +1,4 @@
 <!-- HOME -->
-
-<header>
-    <app-menu-bar></app-menu-bar>
-</header>
-
 <div class="teste-title">
     <app-menu-title></app-menu-title>
 </div>
@@ -12,24 +7,19 @@
     <!-- Artigo Principal -->
     <div class="articles__main">
         <app-big-card 
-            photoCover="https://cutewallpaper.org/24/image-placeholder-png/croppedplaceholderpng-%E2%80%93-osa-grappling.png" 
-            cardTitle="Em construção" 
-            cardDescription="Em construção">
+            id = "1"
+            photoCover="{{photoCard}}" 
+            cardTitle="{{cardTitle}}" 
+            cardDescription="{{cardDescription}}">
         </app-big-card>
     </div>
+    
     <!-- Artigos laterais -->
     <div class="articles__others">
-        <app-small-card 
-            photoCover="https://cutewallpaper.org/24/image-placeholder-png/croppedplaceholderpng-%E2%80%93-osa-grappling.png" 
-            cardTitle="Aguardando...">
-        </app-small-card>
-        <app-small-card 
-            photoCover="https://cutewallpaper.org/24/image-placeholder-png/croppedplaceholderpng-%E2%80%93-osa-grappling.png" 
-            cardTitle="Aguardando...">
-        </app-small-card>
-        <app-small-card 
-            photoCover="https://cutewallpaper.org/24/image-placeholder-png/croppedplaceholderpng-%E2%80%93-osa-grappling.png" 
-            cardTitle="Aguardando...">
+        <app-small-card *ngFor="let lista  of list"
+            id = "{{lista.id}}"
+            photoCover="{{lista.photo}}" 
+            cardTitle="{{lista.title}}">
         </app-small-card>
         
     </div>

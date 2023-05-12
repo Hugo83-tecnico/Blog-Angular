@@ -16,6 +16,7 @@
        
         font-size: 16px;
         margin-top: 10px;
+
     
     }
     
@@ -24,15 +25,10 @@
         margin-top: 10px;
     }
     
-    .big-card__description > p > a{
-        width: 200px;
-       
-        color: grey;
-      
-        margin-top: 10px;
+    .big-card__description > p{
+    width: 300px;
+    
     }
-    
-    
 }
 
 

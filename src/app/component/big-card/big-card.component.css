@@ -29,7 +29,7 @@
     margin-top: 10px;
 }
 
-.big-card__description > p > a{
+.big-card__description > p{
     width: 390px;
     color: grey;
     text-align: justify;
